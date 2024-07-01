@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random_otp_generator</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    body{
+        background-color: rgb(47, 47, 47);
+    }
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .form-control {
+        width: 300px;
+        height: auto;
+        border: 2px solid greenyellow;
+        border-radius: 12px;
+        padding: 20px;
+        background-color: white;
+        -webkit-box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.75);
+
+    }
+
+    input {
+        width: 100%;
+        height: 40px;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid greenyellow;
+        margin-top: 15px;
+
+    }
+
+    button {
+        width: 100%;
+        height: 30px;
+        margin-top: 20px;
+        border-radius: 8px;
+        background-color: greenyellow;
+        font-size: 15px;
+        cursor: pointer;
+        border: 2px solid black;
+    }
+
+    h1 {
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+
+    #otpWrite {
+        border: 2px solid greenyellow;
+        padding: 10px;
+    }
+
+    #show-otp {
+        text-align: center;
+        margin-top: 10px;
+    }
+</style>
+
+<body>
+    <div class="container">
+
+        <form class="form-control">
+            <h1><span>Form Submission</span></h1>
+            <input id="username" type="text" placeholder="Username">
+            <input id="emailaddress" type="email" placeholder="Email Address">
+            <input id="mobailnumber" type="number" placeholder="Mobaile No.">
+            <button id="generateOtp">Generate OTP</button>
+            <div id="show-otp"></div>
+            <input id="otpWrite" type="number" placeholder="Enter OTP here...">
+            <div class="btn">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
