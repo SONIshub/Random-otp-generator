@@ -26,7 +26,9 @@ form.addEventListener("submit", (e) => {
     e.preventDefault()
     let otpWrite = document.getElementById("otpWrite")
     if (otpWrite.value === generatedOtp) {
-        alert("Form Submitted Successfully")
+        // alert("Form Submitted Successfully")
+        document.getElementById("submitedOk").style.display = "block"
+        document.getElementById("formControl").style.display = "none"
         form.reset()
         showotp.style.display = "none"
     }
@@ -34,4 +36,9 @@ form.addEventListener("submit", (e) => {
         alert("Entered OTP is wrong")
         otpWrite.value = ""
     }
+})
+
+document.getElementById("submitOkay").addEventListener("click",()=>{
+    document.getElementById("formControl").style.display = "block"
+    document.getElementById("submitedOk").style.display = "none"
 })
